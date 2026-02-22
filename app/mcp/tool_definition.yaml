@@ -1,0 +1,11 @@
+name: weather_assistant.ask
+description: An intelligent agentic assistant that answers natural language questions about current weather and 5-day forecasts. It supports multi-step reasoning (e.g., "Do I need an umbrella?") and provides metadata about tool usage and confidence.
+type: tool
+inputSchema:
+  type: object
+  properties:
+    query:
+      type: string
+      description: The natural language query. Dates (tomorrow, weekend) and activities (running, umbrella) are supported.
+  required:
+    - query

@@ -1,0 +1,26 @@
+[
+  {
+    "query": "What is the weather in Mumbai?",
+    "expected_intent": "weather_tool",
+    "expected_entities": {
+      "location": "Mumbai"
+    }
+  },
+  {
+    "query": "Will it rain tomorrow in Delhi?",
+    "expected_intent": "forecast_tool",
+    "expected_entities": {
+      "location": "Delhi",
+      "date": "tomorrow"
+    }
+  },
+  {
+    "query": "Can I go cycling today in Chennai?",
+    "expected_intent": "weather_tool",
+    "expected_entities": {
+      "location": "Chennai",
+      "activity": "outdoor_exercise"
+    },
+    "expected_reasoning": "Check rain, temp, wind"
+  }
+]
