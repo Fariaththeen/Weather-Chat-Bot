@@ -60,7 +60,7 @@ export default function ContactModal({ isOpen, onClose }) {
                             >
                                 <div className="absolute -inset-8 bg-gradient-to-r from-aurora-green via-vibrant-lime to-aurora-green rounded-full blur-3xl opacity-20 group-hover:opacity-60 transition duration-700 pointer-events-auto"></div>
                                 <h1 className="relative text-6xl sm:text-8xl md:text-[12rem] font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white/90 to-white/30 drop-shadow-2xl">
-                                    CIPTL
+                                    CITPL
                                 </h1>
                             </motion.div>
                         </div>

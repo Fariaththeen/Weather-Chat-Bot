@@ -13,7 +13,10 @@ export default function Navigation({ onViewChange, currentView, onContactClick }
         >
             <div className="flex items-center gap-4 md:gap-8 bg-glass-white backdrop-blur-xl border border-white/10 rounded-full px-4 md:px-6 py-2 md:py-3 pointer-events-auto shadow-lg shadow-black/20 overflow-x-auto max-w-full no-scrollbar">
                 {/* Logo */}
-                <button onClick={() => onViewChange('chat')} className="font-extrabold text-xl md:text-2xl text-white tracking-tight hover:text-vibrant-lime transition-colors pr-2 md:pr-0">Wbot</button>
+                <button onClick={() => onViewChange('chat')} className="flex items-center gap-2 font-extrabold text-xl md:text-2xl text-white tracking-tight hover:text-vibrant-lime transition-colors pr-2 md:pr-0">
+                    <img src="/logo.svg" alt="Wbot Logo" className="w-6 h-6 md:w-8 md:h-8" />
+                    Wbot
+                </button>
 
                 {/* Links */}
                 <div className="flex items-center gap-4 md:gap-6 flex-shrink-0">
