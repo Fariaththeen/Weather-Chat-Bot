@@ -48,6 +48,10 @@ app.mount("/assets", StaticFiles(directory="app/static/assets"), name="assets")
 def serve_frontend():
     return FileResponse("app/static/index.html")
 
+@app.get("/logo.svg")
+def serve_logo():
+    return FileResponse("app/static/logo.svg")
+
 @app.post("/weather", response_model=APIResponse)
 async def query_weather(request: WeatherQuery, x_user_id: str = "web_user"):
     """
