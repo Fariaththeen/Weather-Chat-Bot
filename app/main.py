@@ -1,5 +1,7 @@
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import JSONResponse, StreamingResponse
+from fastapi.responses import JSONResponse, StreamingResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
+import os
 from pydantic import BaseModel
 from typing import Dict, Any, Optional
 import structlog
@@ -40,9 +42,11 @@ async def add_process_time_header(request: Request, call_next):
 async def health_check():
     return {"status": "ok"}
 
+app.mount("/assets", StaticFiles(directory="app/static/assets"), name="assets")
+
 @app.get("/")
-async def root():
-    return {"message": "Agentic Weather Assistant is running. Visit /docs for API documentation."}
+def serve_frontend():
+    return FileResponse("app/static/index.html")
 
 @app.post("/weather", response_model=APIResponse)
 async def query_weather(request: WeatherQuery, x_user_id: str = "web_user"):
