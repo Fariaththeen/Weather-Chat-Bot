@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <g transform="translate(50, 50) rotate(-30) translate(-50, -50)">
     <!-- Top arc -->
-    <path d="M 30 25 Q 50 12 70 25" stroke="#125afb" stroke-width="6" stroke-linecap="round" fill="none" />
+    <path d="M 30 25 Q 50 12 70 25" stroke="#ccff00" stroke-width="6" stroke-linecap="round" fill="none" />
     
     <!-- Bottom arc -->
-    <path d="M 30 75 Q 50 88 70 75" stroke="#125afb" stroke-width="6" stroke-linecap="round" fill="none" />
+    <path d="M 30 75 Q 50 88 70 75" stroke="#ccff00" stroke-width="6" stroke-linecap="round" fill="none" />
     
     <!-- Main pill -->
-    <rect x="15" y="32" width="70" height="36" rx="18" fill="#125afb" />
+    <rect x="15" y="32" width="70" height="36" rx="18" fill="#ccff00" />
     
     <!-- Eyes -->
-    <circle cx="36" cy="50" r="7" fill="white" />
-    <circle cx="64" cy="50" r="7" fill="white" />
+    <circle cx="36" cy="50" r="7" fill="#051a14" />
+    <circle cx="64" cy="50" r="7" fill="#051a14" />
   </g>
 </svg>
